@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --fs-heading:clamp(4rem, 1rem + 5vw, 5rem);
+  --fs-heading-small:clamp(1rem, 0.5rem + 5vw, 2rem);
+  --fs-body:clamp(1.6rem,1rem + 2vw, 2rem);
+
+  --ff-heading: 'Staatliches', sans-serif;
+  --ff-body: 'Palanquin', sans-serif;
+
+  --hue:250;
+
+  --fc-heading:hsl(0, 0%, 100%);
+  --fc-body:hsla(274, 84%, 12%, 1);
+  --fc-img:hsla(232, 17%, 35%, 1);
+
+  --bg-color-heading:hsla(218, 17%, 62%, 1);
+  --bg-color-logo:hsla(275, 18%, 79%, 1);
+  --bg-color-body:hsla(233, 100%, 97%, 1);
+  --bg-color-img: hsla(312, 91%, 96%, 1);
+}
+
+body{
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+
+  background-color: var(--bg-color-body);
+  
+}
+
+.page{
+  max-width: 38.4rem;
+  text-align:center;
+  margin: auto;
+  
+}
+
+header{
+  background-color: var(--bg-color-heading);
+  
+  
+  height: clamp(23.9rem,20rem + 5vw, 29.9rem )
+}
+
+
+
+header h1{
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading);
+  
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+
+  padding: 0.8rem;
+  margin-top: 8px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  background-color: var(--bg-color-logo);
+
+  color:var(--fc-heading);
+
+  
+}
+
+.logo{
+  padding-top: 3.2rem;
+  
+
+}
+
+.logo img{
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+  width: clamp(16rem, 5rem + 10vw, 25rem);
+}
+
+main{
+  padding: 1.4rem 3.2rem;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.container-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cards1{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+
+  
+ 
+}
+
+.cards2{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+.card{
+  position: relative;
+
+  
+  
+}
+
+.card img{
+  animation-name: downtop;
+  animation-duration: 600ms;
+  animation-delay: 300ms;
+  animation-fill-mode: backwards;
+
+  width: clamp(10rem, 20rem + 20vw, 30rem);
+
+  
+  
+}
+
+.card img:hover{
+  filter: brightness(1.2);
+  filter: saturate(1.5);
+  transform: scale(1.15);
+  
+  transition:250ms;
+  cursor: pointer;
+}
+
+.card legend{
+  position: absolute;
+
+  top: 1.6rem;
+  right: 1.6rem;
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading-small);
+  font-weight: 400;
+  color:var(--fc-img);
+  
+  background-color: var(--bg-color-img);
+  border-radius: 2rem;
+  padding: 0.6rem 2.4rem;
+
+  animation-name: topdown;
+  animation-duration: 800ms;
+  animation-delay: 300ms;
+  animation-fill-mode: backwards;
+
+}
+
+@keyframes downtop{
+  0%{
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes topdown{
+  0%{
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(min-width:245px){
+    .page{
+      max-width: 1485px;
+    }
+}
+
+@media(min-width:1000px){
+  .container-cards{
+    display: grid;
+    grid-template-areas: "A B " ;
+
+    justify-content:center;
+    gap: 3rem;
+     
+    
+  }
+
+  .container-cards:nth-child(1){
+    grid-area: A; 
+   
+  }
+
+  .container-cards:nth-child(2){
+    grid-area: B;
+  }
+
+
+  main{
+    gap:2.6rem;
+  }
+
+  .card img:hover{
+   
+    filter: brightness(1.2);
+    filter: saturate(1.5);
+    transform: scale(1.15);
+  
+    transition:250ms;
+    cursor: pointer;
+   
+  }
+  
+ 
+}
