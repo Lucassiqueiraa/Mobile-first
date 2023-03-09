@@ -1,14 +1,7 @@
-# Mobile-first
-In this challenge I will use:  - Mobile First; - Flexible measuring unit; - Variables; - Simple animations.
 <h1 align="center"> Mobile First</h1>
 
 <p align="center">
-Nesse desafio, irei usar:
-
-- Mobile First;
-- Unidade de medida flexível;
-- Variáveis;
-- Animações simples.
+In this challenge I will use:  - Mobile First; - Flexible measuring unit; - Variables; - Simple animations.
 </p>
 
 <p align="center">
@@ -28,22 +21,22 @@ Nesse desafio, irei usar:
   <img alt="Projeto mobile first" src="https://i.imgur.com/A3ZUNzo.png" width="50%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - HTML e CSS;
 - Git e Github.
 
-## 💻 Projeto
+## 💻 Project
 
-Landing Page de uma sorveteria e as suas especialidades
+Landing Page of an ice cream shop and its specialties
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1169028052212317700). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+You can view the project layout through [THIS LINK](https://www.figma.com/community/file/1169028052212317700). You must have an account at [Figma](https://figma.com) to access it.
 
-## :memo: Licença
+## :memo: Licensed
 
-Esse projeto está sob a licença MIT.
+This project is licensed under the MIT license.
 
 ---
